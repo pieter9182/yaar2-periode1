@@ -1,0 +1,47 @@
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 62.5% = 1 rem = 10px*/
+}
+
+body{
+font-size: 2rem;
+font-family: 'Lato', sans-serif;
+}
+
+.nav{
+    width: 100vw;
+    background: #E84545;
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    align-items: center;
+    color: #eee;
+    font-size: 120%;
+    padding: 4rem;
+}
+
+.nav>i{
+    font-size: 200%;
+}
+
+.list{
+    display: flex;
+    list-style: none; /* dit haalt de bolletjes of lijntjes van een list item weg*/
+    gap: 2rem;
+}
+
+.cta{
+    width: 11rem;
+    padding: 0.5rem;
+    font-size: 70%;
+    background: #4D2DB7;
+    color: #eee;
+    border: none;
+    border-radius: 0.5rem;
+}
+
