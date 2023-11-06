@@ -1,0 +1,54 @@
+@use "colors";
+@use "fonts";
+
+    //call to action button component with hover
+
+%cta{
+    width: 11rem;
+    padding: 0.5rem;
+    font-size: 70%;
+    background: colors.$pink;
+    color: colors.$font-color;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+%cta:hover{
+    cursor:pointer;
+    background:colors.$purple;
+    transition: 0.2s;     
+}
+
+//default header for sections
+
+%header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: colors.$font-color;
+}
+
+//h2 heading for sections and header
+
+%h2handwriting{
+    font-family: fonts.$handwriting;
+    font-size: 380%;
+    color: colors.$font-color;
+}
+
+//default sections!
+
+%section{
+    padding: 4rem;
+    height: 80rem;
+    border-bottom: colors.$border-pink-small ;
+}
+
+%icon{
+     font-size: 250%;  
+    color: colors.$font-color;
+    border:colors.$border_pink ;
+    border-radius:50%;
+    padding: 1.5rem;
+}

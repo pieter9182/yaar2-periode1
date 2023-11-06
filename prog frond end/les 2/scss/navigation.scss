@@ -1,0 +1,34 @@
+@use "colors";
+@use "components";
+.nav{
+    width: 100vw;
+    background:colors.$blue-transparant ;
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+    color: colors.$font-color;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__logo{
+    @extend %icon;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none; /* dit haalt de bolletjes of lijntjes van een list item weg*/
+    gap: 4rem;
+}
+
+.nav__button{
+    @extend %cta;
+}
+
+
+
